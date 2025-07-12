@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dayanira M.R.</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">Dayanira M.R.</div>
+    <nav class="nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Hero / Inicio -->
+
+<section id="inicio" class="hero" style="background-image: url('art-7537962_1280.jpg'); background-size: cover; background-position: center;">
+  <div class="overlay-hero"></div>
+  <div class="contenido">
+    <h1 class="titulo">Diseñadora Gráfica</h1>
+    <h2 class="subtitulo">Creatividad hecha imagen</h2>
+
+    <div class="perfil">
+      <div class="foto">
+        <img src="Dayanira123.jpg" alt="Foto de Dayanira" />
+      </div>
+      <div class="descripcion">
+        <p>Hola, soy Dayanira. Me especializo en crear piezas visuales con propósito y estética. Exploro el diseño como medio de comunicación efectiva y emocional.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Servicios -->
+  <section id="servicios" class="seccion servicios" style="background-image: url('assets/img/servicios.jpg'); background-size: cover; background-position: center;">
+    <h2>Mis Servicios</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="branding.jpeg" alt="Branding" />
+        <div class="texto">Branding Creativo</div>
+      </div>
+      <div class="card">
+        <img src="editorial.jpeg" alt="Editorial" />
+        <div class="texto">Diseño Editorial</div>
+      </div>
+      <div class="card">
+        <img src="descarga (6).jpeg" alt="Afiche" />
+        <div class="texto">Afiches Promocionales</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyectos que Inspiran -->
+  <section class="destacado-collage" style="background-image: url('assets/img/destacado-fondo.jpg'); background-size: cover; background-position: center;">
+    <div class="contenedor-collage">
+      <div class="texto-collage">
+        <h2>Proyectos que Inspiran</h2>
+        <p>Cada pieza cuenta una historia visual pensada para conectar con las emociones y transmitir mensajes claros a través del diseño.</p>
+      </div>
+
+      <div class="imagenes-collage">
+        <div class="fila">
+          <img src="1.png" alt="Proyecto 1 grande" class="grande" />
+          <img src="2.png" alt="Proyecto 2" class="mediana" />
+        </div>
+        <div class="fila">
+          <img src="3.png" alt="Proyecto 3" class="mediana" />
+          <img src="4.png" alt="Proyecto 4" class="pequena" />
+          <img src="5.png" alt="Proyecto 5" class="pequena" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galería -->
+  <section id="galeria" class="seccion galeria" style="background-image: url('assets/img/galeria.jpg'); background-size: cover; background-position: center;">
+    <div class="contenedor-galeria">
+      <h2>Galería de Proyectos</h2>
+      <div class="grid">
+        <div class="item">
+          <img src="Captura de pantalla 2025-07-04 003445.png" alt="Proyecto 1" />
+          <div class="overlay">Cerveza Artesanal</div>
+        </div>
+        <div class="item">
+          <img src="Captura de pantalla 2025-06-28 000741.png" alt="Proyecto 2" />
+          <div class="overlay">Manual de Identidad</div>
+        </div>
+        <div class="item">
+          <img src="Imagen de WhatsApp 2025-07-11 a las 17.33.18_ee372dad.jpg" alt="Proyecto 3" />
+          <div class="overlay">Juego de Mesa</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="contacto" style="background-image: url('assets/img/contacto.jpg'); background-size: cover; background-position: center;">
+    <h2>Contáctame</h2>
+    <p>Déjame tus datos y el servicio que deseas solicitar.</p>
+    <form class="formulario" action="#" method="POST">
+      <input type="text" name="nombre" placeholder="Tu nombre" required />
+      <input type="email" name="email" placeholder="Tu correo electrónico" required />
+      <select name="servicio" required>
+        <option value="">Selecciona un servicio</option>
+        <option value="branding">Branding Creativo</option>
+        <option value="editorial">Diseño Editorial</option>
+        <option value="afiche">Afiches Promocionales</option>
+        <option value="otros">Otros</option>
+      </select>
+      <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Dayanira M.R. - Portafolio de Diseño Gráfico</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
