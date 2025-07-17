@@ -10,6 +10,9 @@
 <body>
   <!-- Header -->
   <header>
+    <section class="hero-portafolio">
+    <h1>Mi Portafolio</h1>
+    </section>
     <div class="logo">Dayanira M.R.</div>
     <nav class="nav">
       <a href="#inicio">Inicio</a>
@@ -19,25 +22,23 @@
     </nav>
   </header>
 
-  <!-- Hero / Inicio -->
+  <!-- Hero -->
+  <section id="inicio" class="hero" style="background-image: url('art-7537962_1280.jpg'); background-size: cover; background-position: center;">
+    <div class="overlay-hero"></div>
+    <div class="contenido">
+      <h1 class="titulo">Diseñadora Gráfica</h1>
+      <h2 class="subtitulo">Creatividad hecha imagen</h2>
 
-<section id="inicio" class="hero" style="background-image: url('art-7537962_1280.jpg'); background-size: cover; background-position: center;">
-  <div class="overlay-hero"></div>
-  <div class="contenido">
-    <h1 class="titulo">Diseñadora Gráfica</h1>
-    <h2 class="subtitulo">Creatividad hecha imagen</h2>
-
-    <div class="perfil">
-      <div class="foto">
-        <img src="Dayanira123.jpg" alt="Foto de Dayanira" />
-      </div>
-      <div class="descripcion">
-        <p>Hola, soy Dayanira. Me especializo en crear piezas visuales con propósito y estética. Exploro el diseño como medio de comunicación efectiva y emocional.</p>
+      <div class="perfil">
+        <div class="foto">
+          <img src="Dayanira123.jpg" alt="Foto de Dayanira" />
+        </div>
+        <div class="descripcion">
+          <p>Hola, soy Dayanira. Me especializo en crear piezas visuales con propósito y estética. Exploro el diseño como medio de comunicación efectiva y emocional.</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-
+  </section>
 
   <!-- Servicios -->
   <section id="servicios" class="seccion servicios" style="background-image: url('assets/img/servicios.jpg'); background-size: cover; background-position: center;">
@@ -58,45 +59,61 @@
     </div>
   </section>
 
-  <!-- Proyectos que Inspiran -->
-  <section class="destacado-collage" style="background-image: url('assets/img/destacado-fondo.jpg'); background-size: cover; background-position: center;">
-    <div class="contenedor-collage">
-      <div class="texto-collage">
-        <h2>Proyectos que Inspiran</h2>
-        <p>Cada pieza cuenta una historia visual pensada para conectar con las emociones y transmitir mensajes claros a través del diseño.</p>
-      </div>
+<!-- Proyectos que Inspiran -->
+ 
+<section class="seccion proyectos" id="proyectos">
+  <h2>Proyectos que Inspiran</h2>
 
-      <div class="imagenes-collage">
-        <div class="fila">
-          <img src="1.png" alt="Proyecto 1 grande" class="grande" />
-          <img src="2.png" alt="Proyecto 2" class="mediana" />
-        </div>
-        <div class="fila">
-          <img src="3.png" alt="Proyecto 3" class="mediana" />
-          <img src="4.png" alt="Proyecto 4" class="pequena" />
-          <img src="5.png" alt="Proyecto 5" class="pequena" />
-        </div>
-      </div>
+  <div class="proyecto fila">
+    <div class="img-proyecto mover-imagen">
+      <img src="1.png" alt="Proyecto 1">
     </div>
-  </section>
+    <div class="texto-proyecto">
+      <h3> POST, afiches y flyers</h3>
+      <p>Diseño publicitario que comunica en segundos, pensado para destacar en redes, calles y eventos.</p>
+    </div>
+  </div>
 
-  <!-- Galería -->
+  <div class="proyecto fila reversa">
+    <div class="img-proyecto mover-imagen">
+      <img src="2.png" alt="Proyecto 2">
+    </div>
+    <div class="texto-proyecto">
+      <h3> Etiquetas</h3>
+      <p> Diseño de etiquetas que transmite sabor, calidad y autenticidad desde el primer vistazo.</p>
+    </div>
+  </div>
+
+  <div class="proyecto fila">
+    <div class="img-proyecto mover-imagen">
+      <img src="3.png" alt="Proyecto 3">
+    </div>
+    <div class="texto-proyecto">
+      <h3>  Packaging Creativo</h3>
+      <p> Propuesta que une funcionalidad y creatividad para cautivar en el punto de venta.</p>
+    </div>
+  </div>
+
+  <div class="proyecto fila reversa">
+    <div class="img-proyecto mover-imagen">
+      <img src="5.png" alt="Proyecto 4">
+    </div>
+    <div class="texto-proyecto">
+      <h3> Modelado</h3>
+      <p>Un proceso creativo que combina técnica, volumen y presentación para dar vida a conceptos visuales sólidos y funcionales.</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Galería con efecto tipo overlay -->
   <section id="galeria" class="seccion galeria" style="background-image: url('assets/img/galeria.jpg'); background-size: cover; background-position: center;">
     <div class="contenedor-galeria">
       <h2>Galería de Proyectos</h2>
-      <div class="grid">
-        <div class="item">
-          <img src="Captura de pantalla 2025-07-04 003445.png" alt="Proyecto 1" />
-          <div class="overlay">Cerveza Artesanal</div>
-        </div>
-        <div class="item">
-          <img src="Captura de pantalla 2025-06-28 000741.png" alt="Proyecto 2" />
-          <div class="overlay">Manual de Identidad</div>
-        </div>
-        <div class="item">
-          <img src="Imagen de WhatsApp 2025-07-11 a las 17.33.18_ee372dad.jpg" alt="Proyecto 3" />
-          <div class="overlay">Juego de Mesa</div>
-        </div>
+      <div class="grid-overlay">
+        <div class="container" style="background-image: url('Captura de pantalla 2025-07-04 003445.png');" data-title="Cerveza Artesanal"></div>
+        <div class="container" style="background-image: url('Captura de pantalla 2025-06-28 000741.png');" data-title="Manual de Identidad"></div>
+        <div class="container" style="background-image: url('Imagen de WhatsApp 2025-07-11 a las 17.33.18_ee372dad.jpg');" data-title="Juego de Mesa"></div>
       </div>
     </div>
   </section>
